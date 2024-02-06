@@ -8,7 +8,7 @@ function createTodo() {
         listItem.innerHTML = userInput.value;
         listItem.setAttribute("onclick", "todoCheck(event, this)");
         document.getElementById("note").value = "";
-        userInput.placeholder = "Add something...";
+        userInput.placeholder = "Add another item.";
     }
     else {
         userInput.placeholder = "You have not written anything. Please, write here!";
@@ -18,6 +18,7 @@ function createTodo() {
 
 function deleteTodos() {
     document.getElementById("todos-container").innerHTML = "";
+    document.getElementById("note").placeholder = "Add something...";
 }
 
 
