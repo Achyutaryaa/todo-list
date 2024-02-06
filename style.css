@@ -36,6 +36,7 @@ h1 {
     padding: 3px;
     margin: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #todos-container li:nth-child(even) {
